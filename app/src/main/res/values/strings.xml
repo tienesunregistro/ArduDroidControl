@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ArduDroidControl-(JJGM)</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_Acercade">Aceca de..</string>
+    <string name="txTituloSalidaAnaligica">SALIDAS ANALOG DE 0-255</string>
+    <string name="txTituloSalidaDigital">SALIDAS DIGITALES ON-OFF</string>
+    <string name="btnIO13">13</string>
+    <string name="btnIO12">12</string>
+    <string name="btnIO11">11</string>
+    <string name="btnIO10">10</string>
+    <string name="btnIO09">09</string>
+    <string name="btnIO08">08</string>
+    <string name="btnIO07">07</string>
+    <string name="btnIO06">06</string>
+    <string name="btnIO05">05</string>
+    <string name="btnIO04">04</string>
+    <string name="btnIO03">03</string>
+    <string name="btnIO02">02</string>
+    <string name="textViewGetSendData">GET/SEND COMAND ARDUINO</string>
+    <string name="btnSendData">Envio Cmd</string>
+    <string name="btnGetdata">Leer dato</string>
+    <string name="Getdata">xxxx</string>
+    <string name="txGetData">Leer dato</string>
+    <string name="btnConectar">Conexión</string>
+    <string name="btnDesConectar">Desconexión</string>
+    <string name="title_activity_about_ardu_droid_control">AboutArduDroidControl</string>
+    <string name="nombredevelopper">Develop.  by Juan José García Moreno - (2014)</string>
+
+</resources>

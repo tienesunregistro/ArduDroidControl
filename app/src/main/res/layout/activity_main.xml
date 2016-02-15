@@ -1,0 +1,372 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:keepScreenOn="true"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewTituloAnalogicas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:gravity="center"
+                android:text="@string/txTituloSalidaAnaligica"
+               />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="PIN 11"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <SeekBar
+                    android:id="@+id/seekBarAnalog11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:max="@integer/CONST_MAX_VALUE_ANALOG"
+                    android:progress="@integer/CONST_VALUE_ANALOG_STEP"
+                    android:layout_marginEnd="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="10dp"
+                    android:text="PIN 10"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <SeekBar
+                    android:id="@+id/seekBarAnalog10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:focusable="false"
+                    android:max="@integer/CONST_MAX_VALUE_ANALOG"
+                    android:progress="@integer/CONST_VALUE_ANALOG_STEP" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView09"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="10dp"
+                    android:text="PIN 09"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <SeekBar
+                    android:id="@+id/seekBarAnalog09"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:focusable="false"
+                    android:max="@integer/CONST_MAX_VALUE_ANALOG"
+                    android:progress="@integer/CONST_VALUE_ANALOG_STEP" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView06"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="10dp"
+                    android:text="PIN 06"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <SeekBar
+                    android:id="@+id/seekBarAnalog06"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:focusable="false"
+                    android:max="@integer/CONST_MAX_VALUE_ANALOG"
+                    android:progress="@integer/CONST_VALUE_ANALOG_STEP" />
+            </LinearLayout>
+
+
+            <View
+                android:id="@+id/primerdivisor"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="2dp"
+                android:background="@android:color/black" />
+
+
+            <TextView
+                android:id="@+id/textViewTituloSalidaDigital"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text="@string/txTituloSalidaDigital"
+                 />
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:dividerPadding="0dp">
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <Button
+                        android:id="@+id/btnIO13"
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="OnClickBotonesSalidasDigitales"
+                        android:text="13"
+                        android:layout_margin="5dp" />
+
+                    <Button
+                        android:id="@+id/btnIO12"
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="OnClickBotonesSalidasDigitales"
+                        android:text="12"
+                        android:layout_margin="5dp" />
+
+                    <Button
+                        android:id="@+id/btnIO11"
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="OnClickBotonesSalidasDigitales"
+                        android:text="11"
+                        android:layout_margin="5dp" />
+
+                    <Button
+                        android:id="@+id/btnIO10"
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="OnClickBotonesSalidasDigitales"
+                        android:text="10"
+                        android:layout_margin="5dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <Button
+                        android:id="@+id/btnIO09"
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="OnClickBotonesSalidasDigitales"
+                        android:text="09"
+                        android:layout_margin="5dp" />
+
+                    <Button
+                        android:id="@+id/btnIO08"
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="OnClickBotonesSalidasDigitales"
+                        android:text="08"
+                        android:layout_margin="5dp" />
+
+                    <Button
+                        android:id="@+id/btnIO07"
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="OnClickBotonesSalidasDigitales"
+                        android:text="07"
+                        android:layout_margin="5dp" />
+
+                    <Button
+                        android:id="@+id/btnIO06"
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="OnClickBotonesSalidasDigitales"
+                        android:text="06"
+                        android:layout_margin="5dp" />
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <Button
+                        android:id="@+id/btnIO05"
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="OnClickBotonesSalidasDigitales"
+                        android:text="05"
+                        android:layout_margin="5dp" />
+
+                    <Button
+                        android:id="@+id/btnIO04"
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="OnClickBotonesSalidasDigitales"
+                        android:text="04"
+                        android:layout_margin="5dp" />
+
+                    <Button
+                        android:id="@+id/btnIO03"
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="OnClickBotonesSalidasDigitales"
+                        android:text="03"
+                        android:layout_margin="5dp" />
+
+                    <Button
+                        android:id="@+id/btnIO02"
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="OnClickBotonesSalidasDigitales"
+                        android:text="02"
+                        android:layout_margin="5dp" />
+                </TableRow>
+
+
+            </TableLayout>
+
+
+            <View
+                android:id="@+id/segundodivisor"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/black" />
+
+            <TextView
+                android:id="@+id/textViewGetSendData"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/textViewGetSendData"
+                 />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnSendData"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/btnSendData" />
+
+                <EditText
+                    android:id="@+id/txsenddata"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Escribir comando..." />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnGetData"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:onClick="OnClickLecturaAnalogica"
+                    android:text="@string/txGetData" />
+
+                <EditText
+                    android:id="@+id/txgetdata"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text=""
+                    android:hint="Leer entrada..." />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnConectar"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+
+                    android:layout_weight="1"
+                    android:focusable="false"
+                    android:onClick="findBoard"
+                    android:text="@string/btnConectar"
+                    android:focusableInTouchMode="false" />
+
+                <Button
+                    android:id="@+id/btnDesConectar"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+
+                    android:layout_weight="2"
+                    android:onClick="disconnectFromBoard"
+
+                    android:text="@string/btnDesConectar" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+
+
