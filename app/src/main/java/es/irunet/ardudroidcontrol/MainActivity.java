@@ -1,12 +1,16 @@
 package es.irunet.ardudroidcontrol;
-
+/*
+ * Rev. 2.01
+ * 28-04-2016
+Adaptado al Android studio 2.1
+ */
 /*
  * ARDUDROIDCONTROL
- * Develop by Juan José García
+ * Develop by Juan JosÃ© GarcÃ­a
  * Rev. 2.00
  * 15-09-2014
  * 
- * Ajustado para la versión 2 de Kernel.
+ * Ajustado para la versiÃ³n 2 de Kernel.
  */
 import android.app.Activity;
 import android.bluetooth.BluetoothAdapter;
@@ -546,7 +550,7 @@ public class MainActivity extends Activity {
 		case R.id.btnIO02:
 			estadoSalidaDigital[2] = !estadoSalidaDigital[2];
 
-			if (estadoSalidaDigital[2] == true) {
+			if (estadoSalidaDigital[2]) {
 				SendCommand("*|10|2|1|#");
 				btnIO02.setBackgroundColor(Color.RED);
 			} else {
@@ -559,7 +563,7 @@ public class MainActivity extends Activity {
 
 			estadoSalidaDigital[3] = !estadoSalidaDigital[3];
 
-			if (estadoSalidaDigital[3] == true) {
+			if (estadoSalidaDigital[3]) {
 				SendCommand("*|10|3|1|#");
 				btnIO03.setBackgroundColor(Color.RED);
 			} else {
@@ -572,7 +576,7 @@ public class MainActivity extends Activity {
 
 			estadoSalidaDigital[4] = !estadoSalidaDigital[4];
 
-			if (estadoSalidaDigital[4] == true) {
+			if (estadoSalidaDigital[4]) {
 				SendCommand("*|10|4|1|#");
 				btnIO04.setBackgroundColor(Color.RED);
 			} else {
@@ -585,7 +589,7 @@ public class MainActivity extends Activity {
 
 			estadoSalidaDigital[5] = !estadoSalidaDigital[5];
 
-			if (estadoSalidaDigital[5] == true) {
+			if (estadoSalidaDigital[5]) {
 				SendCommand("*|10|5|1|#");
 				btnIO05.setBackgroundColor(Color.RED);
 			} else {
@@ -598,7 +602,7 @@ public class MainActivity extends Activity {
 
 			estadoSalidaDigital[6] = !estadoSalidaDigital[6];
 
-			if (estadoSalidaDigital[6] == true) {
+			if (estadoSalidaDigital[6]) {
 				SendCommand("*|10|6|1|#");
 				btnIO06.setBackgroundColor(Color.RED);
 			} else {
@@ -611,7 +615,7 @@ public class MainActivity extends Activity {
 
 			estadoSalidaDigital[7] = !estadoSalidaDigital[7];
 
-			if (estadoSalidaDigital[7] == true) {
+			if (estadoSalidaDigital[7]) {
 				SendCommand("*|10|7|1|#");
 				btnIO07.setBackgroundColor(Color.RED);
 			} else {
@@ -624,7 +628,7 @@ public class MainActivity extends Activity {
 
 			estadoSalidaDigital[8] = !estadoSalidaDigital[8];
 
-			if (estadoSalidaDigital[8] == true) {
+			if (estadoSalidaDigital[8]) {
 				SendCommand("*|10|8|1|#");
 				btnIO08.setBackgroundColor(Color.RED);
 			} else {
@@ -637,7 +641,7 @@ public class MainActivity extends Activity {
 
 			estadoSalidaDigital[9] = !estadoSalidaDigital[9];
 
-			if (estadoSalidaDigital[9] == true) {
+			if (estadoSalidaDigital[9]) {
 				SendCommand("*|10|9|1|#");
 				btnIO09.setBackgroundColor(Color.RED);
 			} else {
@@ -650,7 +654,7 @@ public class MainActivity extends Activity {
 
 			estadoSalidaDigital[10] = !estadoSalidaDigital[10];
 
-			if (estadoSalidaDigital[10] == true) {
+			if (estadoSalidaDigital[10]) {
 				SendCommand("*|10|10|1|#");
 				btnIO10.setBackgroundColor(Color.RED);
 			} else {
@@ -663,7 +667,7 @@ public class MainActivity extends Activity {
 
 			estadoSalidaDigital[11] = !estadoSalidaDigital[11];
 
-			if (estadoSalidaDigital[11] == true) {
+			if (estadoSalidaDigital[11]) {
 				SendCommand("*|10|11|1|#");
 				btnIO11.setBackgroundColor(Color.RED);
 			} else {
@@ -676,7 +680,7 @@ public class MainActivity extends Activity {
 
 			estadoSalidaDigital[12] = !estadoSalidaDigital[12];
 
-			if (estadoSalidaDigital[12] == true) {
+			if (estadoSalidaDigital[12]) {
 				SendCommand("*|10|12|1|#");
 				btnIO12.setBackgroundColor(Color.RED);
 			} else {
@@ -689,7 +693,7 @@ public class MainActivity extends Activity {
 
 			estadoSalidaDigital[13] = !estadoSalidaDigital[13];
 
-			if (estadoSalidaDigital[13] == true) {
+			if (estadoSalidaDigital[13]) {
 				SendCommand("*|10|13|1|#");
 				btnIO13.setBackgroundColor(Color.RED);
 
@@ -763,7 +767,7 @@ public class MainActivity extends Activity {
 			Thread.sleep(50);
 
 		} catch (Exception e) {
-
+			//
 		}
 
 	}

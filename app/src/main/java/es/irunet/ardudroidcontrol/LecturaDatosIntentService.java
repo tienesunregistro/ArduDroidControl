@@ -62,7 +62,7 @@ public class LecturaDatosIntentService extends IntentService {
     /**
      * Handle action Foo in the provided background thread with the provided
      * parameters.
-     * Simulación de la tarjeta
+     * SimulaciÃ³n de la tarjeta
      */
     /*
     private String handleActionLeerDato_(String param1) {
